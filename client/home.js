@@ -5,6 +5,9 @@ Template.home.onCreated(function() {
 Template.home.helpers({
   count() {
     return Posts.find().count();
+  },
+  posts() {
+    return Posts.find();
   }
 });
 
